@@ -1,3 +1,15 @@
+@use "./components-style/header";
+@use "./components-style/navbar";
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+// Font
+$font: "Mona Sans", sans-serif;
+
+// Main colors
+$black: #121212;
+$white: #e8e8e8;
+$grey: #bbb;
+
 // Reset CSS
 *,
 *::before,
@@ -5,4 +17,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  font-family: $font;
+}
+
+#app-header {
+  text-align: center;
 }

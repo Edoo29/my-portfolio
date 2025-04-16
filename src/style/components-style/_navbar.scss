@@ -1,0 +1,34 @@
+#navbar {
+  position: fixed;
+  left: 2em;
+  top: 50%;
+  padding: 10px;
+}
+
+#navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar-item-border {
+  border-top: solid 2px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.is-hovered {
+  width: 100%;
+}
+
+.is-not-hovered {
+  width: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+}
