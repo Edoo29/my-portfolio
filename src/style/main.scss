@@ -1,14 +1,10 @@
+@use "./variables";
 @use "./components-style/header";
 @use "./components-style/navbar";
+@use "./components-style/topbar";
+@use "./components-style/paragraph";
+@use "./components-style/roadmap";
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-
-// Font
-$font: "Mona Sans", sans-serif;
-
-// Main colors
-$black: #121212;
-$white: #e8e8e8;
-$grey: #bbb;
 
 // Reset CSS
 *,
@@ -17,14 +13,22 @@ $grey: #bbb;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
-  background-color: $black;
-  color: $white;
-  font-family: $font;
+  background-color: variables.$black;
+  color: variables.$white;
+  font-family: variables.$font;
 }
 
 #app-header {
   text-align: center;
+}
+
+#app-paragraph {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

@@ -1,0 +1,22 @@
+@use "../variables";
+
+#topbar {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  padding: 10px;
+  color: variables.$grey;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: variables.$black;
+  width: 100%;
+}
+
+.divider {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 10rem;
+  height: 2px;
+  background-color: variables.$grey;
+}

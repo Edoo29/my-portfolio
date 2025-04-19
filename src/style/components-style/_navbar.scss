@@ -1,6 +1,8 @@
+@use "../variables";
+
 #navbar {
   position: fixed;
-  left: 2em;
+  left: 2rem;
   top: 50%;
   padding: 10px;
 }
@@ -14,16 +16,31 @@
   cursor: pointer;
 }
 
+.navbar-item {
+  color: variables.$grey;
+  text-decoration: none;
+}
+
 .navbar-item-border {
-  border-top: solid 2px #fff;
+  border-top: solid 2px variables.$grey;
   transition: all 0.2s ease-in-out;
 }
 
-.is-hovered {
+.active {
+  color: variables.$white;
+  font-weight: 900;
+}
+
+.not-active {
+  color: variables.$grey;
+  font-weight: 400;
+}
+
+.hovered {
   width: 100%;
 }
 
-.is-not-hovered {
+.not-hovered {
   width: 0;
 }
 

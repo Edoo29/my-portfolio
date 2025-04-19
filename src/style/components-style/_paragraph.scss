@@ -1,0 +1,6 @@
+@use "../variables";
+
+.paragraph {
+  color: variables.$grey;
+  width: 33%;
+}
