@@ -1,8 +1,5 @@
 @use "../variables";
 
-$roadmap-border-style: solid 2px variables.$glass;
-$roadmap-border-radius: calc(infinity * 1px);
-
 .arrow {
   margin-top: 2rem;
 }
@@ -25,11 +22,11 @@ $roadmap-border-radius: calc(infinity * 1px);
 }
 
 .roadmap-item {
-  border-top-left-radius: $roadmap-border-radius;
-  border-bottom-left-radius: $roadmap-border-radius;
-  border-left: $roadmap-border-style;
-  border-top: $roadmap-border-style;
-  border-bottom: $roadmap-border-style;
+  border-top-left-radius: variables.$border-radius;
+  border-bottom-left-radius: variables.$border-radius;
+  border-left: variables.$border-style;
+  border-top: variables.$border-style;
+  border-bottom: variables.$border-style;
 }
 
 @mixin roadmap-item-background($background-color) {

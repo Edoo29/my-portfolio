@@ -5,6 +5,7 @@
 @use "./components-style/paragraph";
 @use "./components-style/roadmap";
 @use "./components-style/copyright";
+@use "./components-style/form";
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 // Reset CSS
@@ -35,7 +36,8 @@ body {
   align-items: center;
 }
 
-#about-header {
+#about-header,
+#contact-header {
   width: 100%;
   text-align: center;
 }

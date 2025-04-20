@@ -30,9 +30,9 @@ export default function About() {
           </AboutParagraph>
           <AboutParagraph>
             To make this Portfolio I used React, Typescript, Sass, Motion, React
-            Icons and React Router Dom. I choose a minimal design to give ease
-            of reading. The font is Mona Sans, a free, strong and versatile
-            font.
+            Icons and React Router Dom. I choose a minimal design
+            to give ease of reading. The font is Mona Sans, a free, strong and
+            versatile font.
           </AboutParagraph>
           <AboutParagraph>
             My next goal is to deepen my knowledge of React and then start the

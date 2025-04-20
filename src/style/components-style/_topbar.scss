@@ -20,3 +20,9 @@
   height: 2px;
   background-color: variables.$grey;
 }
+
+@media screen and (max-width: 600px) {
+  #topbar {
+    display: none;
+  }
+}
