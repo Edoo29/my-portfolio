@@ -1,9 +1,9 @@
 @use "../variables";
 
-$roadmap-border-style: solid 2px variables.$grey;
+$roadmap-border-style: solid 2px variables.$glass;
 $roadmap-border-radius: calc(infinity * 1px);
 
-.scroll-down-arrow {
+.arrow {
   margin-top: 2rem;
 }
 
@@ -18,7 +18,7 @@ $roadmap-border-radius: calc(infinity * 1px);
   position: absolute;
   right: 0;
   margin-top: 2rem;
-
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
