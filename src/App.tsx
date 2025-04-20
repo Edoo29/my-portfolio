@@ -1,28 +1,17 @@
-import Header from "./components/header";
-import Navbar from "./components/navbar";
-import Paragraph from "./components/paragraph";
-import Roadmap from "./components/roadmap";
-import Topbar from "./components/topbar";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Homepage from "./routes/homepage";
+import { AnimatePresence } from "motion/react";
+import Work from "./routes/work";
 
 export default function App() {
+  const location = useLocation();
+
   return (
-    <>
-      <Topbar />
-      <Navbar />
-      <div id="app-header">
-        <Header>HELLO, I'M EDO</Header>
-        <section id="app-paragraph">
-          <Paragraph>
-            I'm a young guy who's passionate about programming. In particular,
-            I'm fascinated by web development and everything behind it.
-          </Paragraph>
-          <Paragraph>
-            In all my projects I always try to make the user experience very
-            immersive, but at the same time easy to use
-          </Paragraph>
-        </section>
-      </div>
-      <Roadmap />
-    </>
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" index element={<Homepage />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </AnimatePresence>
   );
 }

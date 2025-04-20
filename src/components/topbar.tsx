@@ -6,6 +6,7 @@ export default function Topbar() {
       initial={{ opacity: 0, x: 200 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1 }}
+      exit={{ opacity: 0, x: 200 }}
       id="topbar"
     >
       <Divider />

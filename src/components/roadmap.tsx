@@ -7,8 +7,9 @@ export default function Roadmap() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 80 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.8 }}
+      exit={{ opacity: 0, x: 80 }}
       id="roadmap"
     >
       {roadmapItems.map((item, idx) => (
@@ -26,7 +27,7 @@ function RoadmapItem({
   idx,
 }: RoadmapItemProps) {
   return (
-    <div className={`roadmap-item ${color}`}>
+    <div style={{ top: `${idx * 15}px` }} className={`roadmap-item ${color}`}>
       <h2>{year}</h2>
       <h3>{title}</h3>
       <p>{description}</p>

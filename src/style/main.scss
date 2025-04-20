@@ -4,6 +4,7 @@
 @use "./components-style/topbar";
 @use "./components-style/paragraph";
 @use "./components-style/roadmap";
+@use "./components-style/copyright";
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 // Reset CSS
@@ -21,6 +22,7 @@ body {
   background-color: variables.$black;
   color: variables.$white;
   font-family: variables.$font;
+  height: 100vh;
 }
 
 #app-header {

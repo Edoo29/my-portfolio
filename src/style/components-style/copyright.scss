@@ -1,0 +1,12 @@
+@use "../variables";
+
+#copyright {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  color: variables.$grey;
+  background: variables.$black;
+}
