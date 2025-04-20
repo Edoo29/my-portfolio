@@ -4,3 +4,15 @@
   color: variables.$grey;
   width: 33%;
 }
+
+.about-paragraph {
+  width: 33%;
+  color: variables.$grey;
+}
+
+@media screen and (max-width: 700px) {
+  .about-paragraph {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

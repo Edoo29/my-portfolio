@@ -34,3 +34,16 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+#about-header {
+  width: 100%;
+  text-align: center;
+}
+
+#about-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

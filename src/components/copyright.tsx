@@ -5,8 +5,7 @@ export default function Copyright() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 80 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.8 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 1.2 } }}
       exit={{ opacity: 0, y: 80 }}
       id="copyright"
     >
