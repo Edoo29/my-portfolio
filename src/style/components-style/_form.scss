@@ -15,9 +15,15 @@
 #textarea {
   background-color: variables.$black;
   border: none;
-  border-bottom: solid 2px variables.$grey;
   padding: 10px;
   color: variables.$white;
+  border-bottom: solid 2px variables.$glass;
+}
+
+.input:focus,
+#textarea:focus {
+  border-bottom: solid 2px variables.$grey;
+  outline: none;
 }
 
 .input::placeholder,
@@ -26,34 +32,32 @@
 #textarea {
   color: variables.$grey;
   font-family: variables.$font;
+  font-size: 14px;
 }
 
 #textarea {
   width: 33%;
-  height: 5rem;
 }
 
-.input:focus,
-#textarea:focus {
-  outline: none;
-}
-
-#button {
+#send-email-button {
   background-color: variables.$white;
   color: variables.$black;
   border: none;
-  padding-top: 15px;
   margin-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
   cursor: pointer;
   border-radius: variables.$border-radius;
   width: 33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
 }
 
 #inputs-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 33%;
+}
+
+input[type="email"] {
   width: 33%;
 }
