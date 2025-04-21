@@ -24,7 +24,9 @@ export default function Form() {
   };
 
   const mail = `${
-    checkFields() ? `mailto:${email}?subject=${subject}&body=${message}` : "#"
+    checkFields()
+      ? `mailto:edodev29@gmail.com?subject=${subject}&body=${message}`
+      : "#"
   }`;
 
   return (
