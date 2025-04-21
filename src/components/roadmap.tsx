@@ -31,7 +31,10 @@ function RoadmapItem({
       <h3>{title}</h3>
       <p>{description}</p>
       {idx === 0 ? (
-        <FaArrowDown className="arrow" />
+        <>
+          <span>(Scroll inside this box)</span>
+          <FaArrowDown className="arrow" />
+        </>
       ) : idx === roadmapItems.length - 1 ? (
         <FaArrowUp className="arrow" />
       ) : (
