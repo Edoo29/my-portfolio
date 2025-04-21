@@ -61,3 +61,22 @@
 input[type="email"] {
   width: 33%;
 }
+
+@media screen and (max-width: 700px) {
+  #form {
+    padding: 35px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  #inputs-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #textarea {
+    width: 100%;
+  }
+}

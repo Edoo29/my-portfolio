@@ -37,12 +37,14 @@ body {
 }
 
 #about-header,
-#contact-header {
+#contact-header,
+#work-header {
   width: 100%;
   text-align: center;
 }
 
-#about-paragraph {
+#about-paragraph,
+#work-paragraph {
   display: flex;
   flex-direction: column;
   justify-content: center;

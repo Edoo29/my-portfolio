@@ -26,7 +26,7 @@ function RoadmapItem({
   idx,
 }: RoadmapItemProps) {
   return (
-    <div style={{ top: `${idx * 15}px` }} className={`roadmap-item ${color}`}>
+    <div className={`roadmap-item ${color}`}>
       <h2>{year}</h2>
       <h3>{title}</h3>
       <p>{description}</p>
