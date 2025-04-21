@@ -62,6 +62,10 @@ input[type="email"] {
   width: 33%;
 }
 
+#contact-paragraph {
+  color: variables.$grey;
+}
+
 @media screen and (max-width: 700px) {
   #form {
     padding: 35px;

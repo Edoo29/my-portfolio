@@ -88,6 +88,14 @@ export default function Form() {
       >
         Please fill all the fields
       </motion.div>
+      <motion.p
+        id="contact-paragraph"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0, transition: { delay: 0.8 } }}
+        exit={{ opacity: 0, x: 100 }}
+      >
+        You can directly reach me at edodev29@gmail.com
+      </motion.p>
     </form>
   );
 }
